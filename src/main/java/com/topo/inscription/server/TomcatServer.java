@@ -42,7 +42,6 @@ public class TomcatServer implements AppServer {
     @Override
     public void start() {
         try {
-            tomcat.addServlet("", "home", new Home());
             tomcat.addServlet("", "registration", new RegistrationServlet());
             tomcat.addServlet("", "display", new DisplayAccountServlet());
             tomcat.getConnector();

@@ -6,7 +6,8 @@ import org.apache.catalina.LifecycleException;
 import javax.servlet.ServletException;
 
 public class Main {
+
     public static void main(String argv[]) throws ServletException, LifecycleException {
-        Server.start();
+        Server.getInstance().start();
     }
 }

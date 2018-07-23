@@ -1,4 +1,6 @@
-package com.topo.inscription.entity;
+package com.topo.inscription.repository;
+
+import com.topo.inscription.entity.Account;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +17,6 @@ public class Repository {
     }
 
     public int save(Account account){
-        account.setId(idCount);
         data.add(account);
         idCount++;
         return idCount;

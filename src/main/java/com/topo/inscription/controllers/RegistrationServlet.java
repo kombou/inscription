@@ -1,7 +1,7 @@
 package com.topo.inscription.controllers;
 
 import com.topo.inscription.entity.Account;
-import com.topo.inscription.entity.Repository;
+import com.topo.inscription.repository.Repository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -71,7 +71,7 @@ public class RegistrationServlet extends HttpServlet{
 
         if(errors.size() == 0){
 
-            Repository.getInstance().save(account);
+           account.setId(Repository.getInstance().save(account));
             resp.sendRedirect("/display?id="+account.getId());
 
         }else {

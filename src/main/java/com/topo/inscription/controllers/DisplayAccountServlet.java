@@ -1,7 +1,7 @@
 package com.topo.inscription.controllers;
 
 import com.topo.inscription.entity.Account;
-import com.topo.inscription.entity.Repository;
+import com.topo.inscription.repository.Repository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
