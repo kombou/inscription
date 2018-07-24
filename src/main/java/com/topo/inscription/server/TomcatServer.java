@@ -1,6 +1,8 @@
 package com.topo.inscription.server;
 
 import com.topo.inscription.controllers.DisplayAccountServlet;
+import com.topo.inscription.controllers.HomeServlet;
+import com.topo.inscription.controllers.LoginServlet;
 import com.topo.inscription.controllers.RegistrationServlet;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.WebResourceRoot;
@@ -44,6 +46,8 @@ public class TomcatServer implements AppServer {
         try {
             tomcat.addServlet("", "registration", new RegistrationServlet());
             tomcat.addServlet("", "display", new DisplayAccountServlet());
+            tomcat.addServlet("", "login", new LoginServlet());
+            tomcat.addServlet("", "", new HomeServlet());
             tomcat.getConnector();
             tomcat.start();
             System.out.println("server deployed " + tomcat.getServer().getStateName());

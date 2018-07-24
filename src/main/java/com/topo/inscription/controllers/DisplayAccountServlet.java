@@ -17,6 +17,6 @@ public class DisplayAccountServlet extends HttpServlet{
         String stringId = req.getParameter("id");
         Account account = Repository.getInstance().findById(Integer.parseInt(stringId));
         req.setAttribute("account",account);
-        req.getRequestDispatcher("/DisplayAccountView.jsp").forward(req,resp);
+        req.getRequestDispatcher("/WEB-INF/DisplayAccountView.jsp").forward(req,resp);
     }
 }

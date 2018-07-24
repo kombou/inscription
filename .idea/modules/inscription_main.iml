@@ -11,6 +11,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-jasper:9.0.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-jsp-api:9.0.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-util-scan:9.0.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-api:9.0.7" level="project" />
@@ -21,5 +22,7 @@
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-el-api:9.0.7" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jdt:ecj:3.12.3" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-annotations-api:9.0.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.0.1" level="project" />
   </component>
 </module>

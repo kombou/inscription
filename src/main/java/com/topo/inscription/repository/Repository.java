@@ -10,37 +10,46 @@ public class Repository {
     private List<Account> data = new ArrayList<>();
     private int idCount = 0;
 
-    private Repository() { }
+    private Repository() {
+    }
 
     public static Repository getInstance() {
         return instance;
     }
 
-    public int save(Account account){
-        data.add(account);
+    public void save(Account account) {
         idCount++;
-        return idCount;
+        account.setId(idCount);
+        data.add(account);
     }
-    public Account findById(int id){
+
+    public Account findById(int id) {
         return data.stream()
                 .filter(account -> (new Integer(account.getId())).equals(id))
                 .findFirst()
                 .orElse(null);
     }
-public boolean useEmail(String email){
+
+    public boolean useEmail(String email) {
         Account account = data.stream()
                 .filter(account1 -> account1.getEmail().equals(email))
-                .findFirst()
-                .get();
-        if(account==null)return false;
+                .findFirst().orElse(null);
+        if (account == null) return false;
         return true;
-}
-    public boolean useTelephone(String tel){
+    }
+
+    public boolean useTelephone(String tel) {
         Account account = data.stream()
                 .filter(account1 -> account1.getTelephone().equals(tel))
                 .findFirst()
-                .get();
-        if(account==null)return false;
+                .orElse(null);
+        if (account == null) return false;
         return true;
+    }
+    public Account findByEmail(String email){
+        return data.stream()
+                .filter(account1 -> account1.getEmail().equals(email))
+                .findFirst()
+                .orElse(null);
     }
 }

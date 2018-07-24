@@ -1,15 +1,16 @@
 <html>
     <head>
         <title>Web Demo</title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
     </head>
     <body>
     <nav class="navbar navbar-light bg-danger">
         <a class="navbar-brand" href="#">Inscription</a>
     </nav>
-        <div class="card" style="width: 200px;position: absolute; left: 40%;top:10%;">
-            <div class="card-body">
-                <form method="post" action="/registration">
+        <div class="container">
+            <div class="col-lg-6">
+                <form method="post" action="/registration" id="form" class="col-12">
                     <div class="form-group">
                         <label for="name">name
                             <input type="text" name="name" id="name" value="${account.name}" class="form-control">

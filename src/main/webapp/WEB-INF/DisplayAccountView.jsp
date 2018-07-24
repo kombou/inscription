@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Web Demo</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 </head>
 <body>
     <nav class="navbar navbar-light bg-danger">
